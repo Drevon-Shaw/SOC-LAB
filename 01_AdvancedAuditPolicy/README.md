@@ -44,3 +44,12 @@ auditpol /get /category:*
 
 # RPC Event Logging
 # Event Viewer -> Applications and Services Logs -> Microsoft -> Windows -> RPC Events -> Enable Log
+
+Screenshots:
+<img width="449" height="360" alt="audit" src="https://github.com/user-attachments/assets/2a962171-c071-4989-9bf1-5cfb0edc6634" />
+<img width="450" height="344" alt="audit 2" src="https://github.com/user-attachments/assets/8be36b6a-b733-4d02-9b8d-905cfa06468f" />
+
+
+
+
+

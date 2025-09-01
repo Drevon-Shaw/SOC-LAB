@@ -1,51 +1,46 @@
 
-# Set Advanced Audit Policy Configuration
+# Advanced Audit Policy Configuration
 
-# Account Logon Events - Tracks user account authentication attempts
-# Location in VM:
-# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Account Logon -> Audit Credential Validation
-# Action: Enable both Success and Failure
+This module configures Windows **Advanced Audit Policies** to monitor logon, object access, process tracking, policy changes, and account management.
 
-# Logon Events - Monitors logon and logoff events
-# Location in VM:
-# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Logon/Logoff -> Audit Logon
-# Action: Enable both Success and Failure
+## Steps
 
-# Object Access - Tracks access to files, folders, and other objects
-# Location in VM:
-# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Object Access
-# Action: Enable both Success and Failure for Audit File System and Audit Registry
+```powershell
+# Check current audit policy
+auditpol /get /category:*
 
-# Process Tracking - Logs detailed tracking information for processes
-# Location in VM:
-# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Detailed Tracking -> Audit Process Creation
-# Action: Enable Success
+# Enable Account Logon Events
+# Path: Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Account Logon -> Audit Credential Validation
+# Enable both Success and Failure
 
-# Policy Change - Monitors changes to policies, including audit policies
-# Location in VM:
-# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Policy Change
-# Action: Enable both Success and Failure for Audit Policy Change
+# Enable Logon Events
+# Path: Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Logon/Logoff -> Audit Logon
+# Enable both Success and Failure
 
-# Account Management - Tracks changes to user, group, and computer accounts
-# Location in VM:
-# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Account Management
-# Action: Enable both Success and Failure for Audit User Account Management
+# Enable Object Access
+# Path: Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Object Access
+# Enable both Success and Failure for Audit File System and Audit Registry
 
-# PowerShell Logging
-# Module Logging - Captures information about the modules loaded by PowerShell
-# Location in VM:
-# Computer Configuration -> Administrative Templates -> Windows Components -> Windows PowerShell -> Turn on Module Logging
-# Action: Enable and add * (asterisk) under Module Names to log all modules
+# Enable Process Tracking
+# Path: Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Detailed Tracking -> Audit Process Creation
+# Enable Success
 
-# Script Block Logging - Captures detailed script block execution information
-# Location in VM:
-# Computer Configuration -> Administrative Templates -> Windows Components -> Windows PowerShell -> Turn on PowerShell Script Block Logging
-# Action: Enable
+# Enable Policy Change
+# Path: Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Policy Change
+# Enable both Success and Failure for Audit Audit Policy Change
+
+# Enable Account Management
+# Path: Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Account Management
+# Enable both Success and Failure for Audit User Account Management
+
+# Enable PowerShell Logging
+# Module Logging:
+# Path: Computer Configuration -> Administrative Templates -> Windows Components -> Windows PowerShell -> Turn on Module Logging
+# Enable and add '*' under Module Names to log all modules
+
+# Script Block Logging:
+# Path: Computer Configuration -> Administrative Templates -> Windows Components -> Windows PowerShell -> Turn on PowerShell Script Block Logging
+# Enable
 
 # RPC Event Logging
-# Remote Procedure Call (RPC) events in Windows refer to the logging and monitoring of activities related to RPC services. 
-# RPC is widely used in Windows for system management and communication tasks.
-# Location in VM:
-# Event Viewer -> Applications and Services Logs -> Microsoft -> Windows -> RPC Events
-# Action: Right-click on RPC Events and select Enable Log
-
+# Event Viewer -> Applications and Services Logs -> Microsoft -> Windows -> RPC Events -> Enable Log

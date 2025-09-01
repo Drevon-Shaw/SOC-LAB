@@ -13,4 +13,6 @@ This repository contains a multi-part SOC Home Lab setup for **Windows & Linux**
 
 Each folder contains **step-by-step instructions**, configuration files, and scripts.
 
-> 🎥 Watch the https://youtu.be/pPX_yF7idIs for a visual guide.
+> 🎥 Watch the https://youtu.be/pPX_yF7idIs for a visual overview.
+> Be advised the video is a walkthrough overview not step by step instructions
+> 

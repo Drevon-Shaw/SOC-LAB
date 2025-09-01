@@ -2,10 +2,6 @@
 
 # Set Advanced Audit Policy Configuration
 
-# See what's currently turned on:
-# Run PowerShell as Admin
-auditpol /get /category:*
-
 # Account Logon Events - Tracks user account authentication attempts
 # Location in VM:
 # Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Account Logon -> Audit Credential Validation

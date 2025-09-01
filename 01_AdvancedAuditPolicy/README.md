@@ -1,36 +1,56 @@
 # 01_AdvancedAuditPolicy/README.md
 
-# Advanced Audit Policy Configuration
+# Set Advanced Audit Policy Configuration
 
-# See current audit policies
+# See what's currently turned on:
+# Run PowerShell as Admin
 auditpol /get /category:*
 
-# Enable Account Logon Events
-auditpol /set /subcategory:"Credential Validation" /success:enable /failure:enable
+# Account Logon Events - Tracks user account authentication attempts
+# Location in VM:
+# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Account Logon -> Audit Credential Validation
+# Action: Enable both Success and Failure
 
-# Enable Logon Events
-auditpol /set /subcategory:"Logon" /success:enable /failure:enable
+# Logon Events - Monitors logon and logoff events
+# Location in VM:
+# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Logon/Logoff -> Audit Logon
+# Action: Enable both Success and Failure
 
-# Enable Object Access (File System & Registry)
-auditpol /set /subcategory:"File System" /success:enable /failure:enable
-auditpol /set /subcategory:"Registry" /success:enable /failure:enable
+# Object Access - Tracks access to files, folders, and other objects
+# Location in VM:
+# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Object Access
+# Action: Enable both Success and Failure for Audit File System and Audit Registry
 
-# Enable Process Tracking
-auditpol /set /subcategory:"Process Creation" /success:enable
+# Process Tracking - Logs detailed tracking information for processes
+# Location in VM:
+# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Detailed Tracking -> Audit Process Creation
+# Action: Enable Success
 
-# Enable Policy Change
-auditpol /set /subcategory:"Audit Policy Change" /success:enable /failure:enable
+# Policy Change - Monitors changes to policies, including audit policies
+# Location in VM:
+# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Policy Change
+# Action: Enable both Success and Failure for Audit Policy Change
 
-# Enable Account Management
-auditpol /set /subcategory:"User Account Management" /success:enable /failure:enable
+# Account Management - Tracks changes to user, group, and computer accounts
+# Location in VM:
+# Computer Configuration -> Windows Settings -> Security Settings -> Advanced Audit Policy Configuration -> Audit Policies -> Account Management
+# Action: Enable both Success and Failure for Audit User Account Management
 
-# Enable PowerShell Module Logging
-Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ModuleLogging" -Name "EnableModuleLogging" -Value 1
-Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ModuleLogging\ModuleNames" -Name "*" -Value "*"
+# PowerShell Logging
+# Module Logging - Captures information about the modules loaded by PowerShell
+# Location in VM:
+# Computer Configuration -> Administrative Templates -> Windows Components -> Windows PowerShell -> Turn on Module Logging
+# Action: Enable and add * (asterisk) under Module Names to log all modules
 
-# Enable PowerShell Script Block Logging
-Set-ItemProperty -Path "HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging" -Name "EnableScriptBlockLogging" -Value 1
+# Script Block Logging - Captures detailed script block execution information
+# Location in VM:
+# Computer Configuration -> Administrative Templates -> Windows Components -> Windows PowerShell -> Turn on PowerShell Script Block Logging
+# Action: Enable
 
-# Enable RPC Event Logging
-# Event Viewer -> Applications and Services Logs -> Microsoft -> Windows -> RPC Events -> Right-click -> Enable Log
+# RPC Event Logging
+# Remote Procedure Call (RPC) events in Windows refer to the logging and monitoring of activities related to RPC services. 
+# RPC is widely used in Windows for system management and communication tasks.
+# Location in VM:
+# Event Viewer -> Applications and Services Logs -> Microsoft -> Windows -> RPC Events
+# Action: Right-click on RPC Events and select Enable Log
 

@@ -1,4 +1,3 @@
-# 01_AdvancedAuditPolicy/README.md
 
 # Set Advanced Audit Policy Configuration
 

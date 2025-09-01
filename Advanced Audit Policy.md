@@ -63,5 +63,10 @@
 **Path:** Event Viewer → Applications and Services Logs → Microsoft → Windows → RPC Events  
 **Action:** Right-click on RPC Events and select **Enable Log**
 
+##Screenshots:
+
+<img width="449" height="360" alt="audit" src="https://github.com/user-attachments/assets/21573f15-67ba-454e-bc71-0fdef6848aed" />
+<img width="450" height="344" alt="audit 2" src="https://github.com/user-attachments/assets/2a599416-a652-4846-a96a-395e5d6b4ec2" />
+
 
 

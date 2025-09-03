@@ -1,6 +1,6 @@
 # 🛡️ SOC Home Lab
 
-Welcome to my **SOC Home Lab** repository! This lab demonstrates a full Security Operations Center environment, including detection engineering, log analysis, incident response, and network monitoring. The lab is broken into modular steps so you can follow along and replicate a real-world SOC setup.
+Welcome to my **SOC Home Lab** repository This lab demonstrates a full Security Operations Center environment, including detection engineering, log analysis, incident response, and network monitoring. The lab is broken into  steps so you can follow along and replicate a real world SOC setup.
 
 ---
 

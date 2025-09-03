@@ -20,25 +20,25 @@ By completing this lab, you will learn to:
 
 ## 🗂️ Table of Contents
 
-1. [Advanced Audit Policy Configuration](01_Advanced_Audit_Policy/README.md)  
+1. [Advanced Audit Policy Configuration](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/Advanced%20Audit%20Policy.md)  
    Learn how to configure Windows audit policies, PowerShell logging, and RPC event tracking.
 
-2. [Sysmon Deployment](02_Sysmon/README.md)  
+2. [Sysmon Deployment](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/Sysmon%20deployment.md)  
    Steps to install and configure Sysmon, including XML configuration and service verification.
 
-3. [Suricata IPS](03_Suricata_IPS/README.md)  
+3. [Suricata IPS]()  
    Guide to installing Suricata, configuring IPS mode, updating rulesets, and verifying operation.
 
-4. [Zeek NetFlow](04_Zeek_NetFlow/README.md)  
+4. [Zeek NetFlow](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/zeek%20and%20suricata%20setup%20.md)  
    Instructions for setting up Zeek, configuring interfaces, network monitoring, JSON log output, and Splunk forwarder integration.
 
-5. [Arkime Packet Capture](05_Arkime/README.md)  
+5. [Arkime Packet Capture](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/arkime%20packet%20capture.md)  
    Deploy Arkime for packet capture, dashboard setup, and basic configuration.
 
-6. [FIR Ticketing System](06_FIR_Ticketing/README.md)  
+6. [FIR Ticketing System](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/FIR%20setup.md)  
    Install and configure the FIR ticketing system for incident tracking and management.
 
-7. [Splunk Deployment](07_Splunk_Deployment/README.md)  
+7. [Splunk Deployment](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/splunk%20deployment.md)  
    Install Splunk Enterprise, configure web settings, enable SSL, and add forwarders.
 
 ---

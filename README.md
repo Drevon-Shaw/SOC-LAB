@@ -2,6 +2,9 @@
 
 Welcome to my **SOC Home Lab** repository This lab demonstrates a full Security Operations Center environment, including detection engineering, log analysis, incident response, and network monitoring. The lab is broken into  steps so you can follow along and replicate a real world SOC setup.
 
+Here is the vide overview of the lab. These are not step by step instructions just the LAB breakdown and final overview.
+https://youtu.be/pPX_yF7idIs
+
 ---
 
 ## 🎯 Lab Objectives

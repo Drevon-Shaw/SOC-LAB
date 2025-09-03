@@ -39,6 +39,9 @@ Open browser: http://arkimeHOST:8005
 User: admin
 Password: THEPASSWORD (from step #6)
 
+<img width="500" height="500" alt="arkime" src="https://github.com/user-attachments/assets/37965b06-bef7-4813-8fdb-4d743cd8b9ba" />
+
+
 
 # Configuration File
 Any configuration changes: /opt/arkime/etc/config.ini

@@ -54,7 +54,4 @@ sudo tail -f /var/log/suricata/eve.json | jq .
 curl http://testmyids.com
 
 # Notes
-# Screenshots to capture:
-# - Suricata running status
-# - Eve JSON alerts in /var/log/suricata/
 # Suricata is now running in IPS mode and monitoring traffic. Logs can be forwarded to Splunk for detection and analysis.

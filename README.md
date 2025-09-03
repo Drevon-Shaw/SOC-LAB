@@ -26,7 +26,7 @@ By completing this lab, you will learn to:
 2. [Sysmon Deployment](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/Sysmon%20deployment.md)  
    Steps to install and configure Sysmon, including XML configuration and service verification.
 
-3. [Suricata IPS]()  
+3. [Suricata IPS](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/suricata%20IPS.md)  
    Guide to installing Suricata, configuring IPS mode, updating rulesets, and verifying operation.
 
 4. [Zeek NetFlow](https://github.com/Drevon-Shaw/SOC-LAB/blob/main/zeek%20and%20suricata%20setup%20.md)  

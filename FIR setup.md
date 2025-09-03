@@ -44,4 +44,3 @@ sudo docker-compose up -d
 # - FIR uses Docker, so any container logs can be checked with:
 #   sudo docker logs <container_name>
 # - Ensure your host firewall allows access to the ports FIR is using
-# - For production setups, consider configuring SSL and secure passwords
